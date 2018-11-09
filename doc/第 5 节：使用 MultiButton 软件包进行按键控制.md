@@ -390,3 +390,9 @@ int main(void)
 ```
 
 ![运行结果](figures/run5.jpg)
+
+## 程序源码
+
+[key.c/.h](https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/key)
+
+[示例程序](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_5.c)
