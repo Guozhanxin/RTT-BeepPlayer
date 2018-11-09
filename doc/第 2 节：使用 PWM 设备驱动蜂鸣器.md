@@ -202,6 +202,6 @@ int main(void)
 
 ## 程序源码
 
-[beep.c/.h](https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/beep)
+beep.c/.h:<https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/beep>
 
-[示例程序](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_2.c)
+示例程序:<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_2.c>

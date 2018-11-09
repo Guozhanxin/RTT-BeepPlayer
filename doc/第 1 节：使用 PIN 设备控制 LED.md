@@ -165,6 +165,6 @@ int main(void)
 
 ## 程序源码
 
-[led.c/.h](https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/led)
+led.c/.h: <https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/led>
 
-[示例程序](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_1.c)
+示例程序: <https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_1.c>

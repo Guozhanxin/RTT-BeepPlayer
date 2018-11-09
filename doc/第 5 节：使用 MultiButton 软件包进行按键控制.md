@@ -393,6 +393,6 @@ int main(void)
 
 ## 程序源码
 
-[key.c/.h](https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/key)
+key.c/.h:<https://github.com/Guozhanxin/RTT-BeepPlayer/tree/master/code/key>
 
-[示例程序](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_5.c)
+示例程序:<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/samples/main_5.c>

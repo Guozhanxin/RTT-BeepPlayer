@@ -20,15 +20,15 @@
 
 ## 教程目录
 
-[第 1 节：使用 PIN 设备控制 LED](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 1 节：使用 PIN 设备控制 LED.md)
+[第 1 节：使用 PIN 设备控制 LED](<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 1 节：使用 PIN 设备控制 LED.md>)
 
-[第 2 节：使用 PWM 设备驱动蜂鸣器](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 2 节：使用 PWM 设备驱动蜂鸣器.md)
+[第 2 节：使用 PWM 设备驱动蜂鸣器](<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 2 节：使用 PWM 设备驱动蜂鸣器.md>)
 
-[第 3 节：音乐数据的编码与解码](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 3 节：音乐数据的编码与解码.md)
+[第 3 节：音乐数据的编码与解码](<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 3 节：音乐数据的编码与解码.md>)
 
-[第 4 节：播放器的实现](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 4 节：播放器的实现.md)
+[第 4 节：播放器的实现](<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 4 节：播放器的实现.md>)
 
-[第 5 节：使用 MultiButton 软件包进行按键控制](https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 5 节：使用 MultiButton 软件包进行按键控制.md)
+[第 5 节：使用 MultiButton 软件包进行按键控制](<https://github.com/Guozhanxin/RTT-BeepPlayer/blob/master/doc/第 5 节：使用 MultiButton 软件包进行按键控制.md>)
 
 ## 程序源码
 
