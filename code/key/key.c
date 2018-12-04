@@ -119,21 +119,21 @@ int key_init(void)
     rt_timer_t timer = RT_NULL;
 
     /* last key init */
-    rt_pin_mode(KEY_LAST_PIN, PIN_MODE_INPUT);
+    rt_pin_mode(KEY_LAST_PIN, PIN_MODE_INPUT_PULLUP);/*此处按键是对地的，pin mode设置为PIN_MODE_INPUT_PULLUP（上拉输入）*/
     button_init(&btn_last, btn_last_read, PIN_LOW);
     button_attach(&btn_last, SINGLE_CLICK,     btn_last_cb);
     button_attach(&btn_last, LONG_PRESS_HOLD,  btn_last_cb);
     button_start(&btn_last);
 
     /* next key init */
-    rt_pin_mode(KEY_NEXT_PIN, PIN_MODE_INPUT);
+    rt_pin_mode(KEY_NEXT_PIN, PIN_MODE_INPUT_PULLUP);
     button_init(&btn_next, btn_next_read, PIN_LOW);
     button_attach(&btn_next, SINGLE_CLICK,     btn_next_cb);
     button_attach(&btn_next, LONG_PRESS_HOLD,  btn_next_cb);
     button_start(&btn_next);
 
     /* play key init */
-    rt_pin_mode(KEY_PLAY_PIN, PIN_MODE_INPUT);
+    rt_pin_mode(KEY_PLAY_PIN, PIN_MODE_INPUT_PULLDOWN);/*此处按键是对3.3V的，pin mode设置为PIN_MODE_INPUT_PULLDOWN（下拉输入）*/
     button_init(&btn_play, btn_play_read, PIN_LOW);
     button_attach(&btn_play, SINGLE_CLICK,     btn_play_cb);
     button_start(&btn_play);

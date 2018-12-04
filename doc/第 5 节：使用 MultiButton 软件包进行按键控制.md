@@ -237,6 +237,9 @@ static void btn_play_cb(void *btn)
 
 启动完按键之后还需要周期性调用按键扫描的函数，这里时通过创建了一个定时器的形式，进行循环调用的。
 
+注意：此处我们默认KEY_LAST_PIN和KEY_NEXT_PIN连接的按键是对GND的，所以配置为PIN_MODE_INPUT_PULLUP（上拉输入）；默认KEY_PLAY_PIN
+连接的按键是对3.3V的，所以配置为PIN_MODE_INPUT_PULLDOWN（下拉输入）。具体使用哪种输入方式需要根据按键的连接方式而定。
+
 ```{.c}
 static void btn_scan(void *p)
 {
@@ -247,21 +250,21 @@ int key_init(void)
     rt_timer_t timer = RT_NULL;
 
     /* last key init */
-    rt_pin_mode(KEY_LAST_PIN, PIN_MODE_INPUT);
+    rt_pin_mode(KEY_LAST_PIN, PIN_MODE_INPUT_PULLUP);
     button_init(&btn_last, btn_last_read, PIN_LOW);
     button_attach(&btn_last, SINGLE_CLICK,     btn_last_cb);
     button_attach(&btn_last, LONG_PRESS_HOLD,  btn_last_cb);
     button_start(&btn_last);
 
     /* next key init */
-    rt_pin_mode(KEY_NEXT_PIN, PIN_MODE_INPUT);
+    rt_pin_mode(KEY_NEXT_PIN, PIN_MODE_INPUT_PULLUP);
     button_init(&btn_next, btn_next_read, PIN_LOW);
     button_attach(&btn_next, SINGLE_CLICK,     btn_next_cb);
     button_attach(&btn_next, LONG_PRESS_HOLD,  btn_next_cb);
     button_start(&btn_next);
 
     /* play key init */
-    rt_pin_mode(KEY_PLAY_PIN, PIN_MODE_INPUT);
+    rt_pin_mode(KEY_PLAY_PIN, PIN_MODE_INPUT_PULLDOWN);
     button_init(&btn_play, btn_play_read, PIN_LOW);
     button_attach(&btn_play, SINGLE_CLICK,     btn_play_cb);
     button_start(&btn_play);
